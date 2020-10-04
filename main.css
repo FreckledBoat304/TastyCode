@@ -1,0 +1,67 @@
+#tabbar{
+    position: absolute;
+    top: 0px;
+    left: 20%;
+    background-color: #202020;
+    width: 80%;
+    height: 60px;
+    color: white;
+    overflow-x: scroll;
+    user-select: none;
+    -moz-user-select: none;
+}
+
+#tabbar::-webkit-scrollbar{
+    height: 10px;
+}
+
+#tabbar::-webkit-scrollbar-track{
+    background: #606060;
+}
+
+#tabbar::-webkit-scrollbar-thumb{
+    background-color: white;
+    opacity: .5;
+}
+
+#addTab{
+    position: absolute;
+    top: 0px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 28pt;
+}
+
+.removeButton{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 15px;
+    width: 15px;
+    line-height: 15px;
+    text-align: center;
+    color: white;
+    display: none;
+    font-size: 10pt;
+}
+
+.tab{
+    position: absolute;
+    top: 0px;
+    background-color: #404040;
+    height: 50px;
+    line-height: 50px;
+    width: 190px;
+    padding-left: 10px;
+    overflow: hidden;
+}
+
+.tab:hover .removeButton{
+    display: block;
+}
+
+.removeButton:hover{
+    color: red;
+}
