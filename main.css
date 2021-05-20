@@ -16,12 +16,11 @@
 }
 
 #tabbar::-webkit-scrollbar-track{
-    background: #606060;
+    background-color: #606060;
 }
 
 #tabbar::-webkit-scrollbar-thumb{
-    background-color: white;
-    opacity: .5;
+    background-color: #757575;
 }
 
 #addTab{
@@ -34,17 +33,28 @@
     font-size: 28pt;
 }
 
+#tabMarker{
+    z-index: 10;
+    background-color: white;
+    width: 2px;
+    height: 50px;
+    position: absolute;
+    top: 0px;
+    display: none;
+}
+
 .removeButton{
     position: absolute;
     top: 5px;
     right: 5px;
-    height: 15px;
-    width: 15px;
-    line-height: 15px;
+    height: 17px;
+    width: 17px;
+    line-height: 17px;
     text-align: center;
     color: white;
     display: none;
-    font-size: 10pt;
+    font-size: 12pt;
+    font-weight: bold;
 }
 
 .tab{
@@ -53,9 +63,13 @@
     background-color: #404040;
     height: 50px;
     line-height: 50px;
-    width: 190px;
-    padding-left: 10px;
+    width: 160px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center; 
     overflow: hidden;
+    font-family: monospace;
+    font-size: 12pt;
 }
 
 .tab:hover .removeButton{
